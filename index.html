@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="decorate.css">
+</head>
+<body>
+    
+</body>
+<header class="con">
+    <h1>WELCOME</h1>
+    <h3>to my website. Let's seek out how rare is your card</h3>
+</header>
+<h4>Please enter your last 2 digits of the card ID that appears on the back of the card you have.</h4>
+<input type="text" id="code" name="code">
+    <button type="button" id="myButton">Check Code</button>
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            var code = document.getElementById("code").value;
+            if (code === "31") {
+                window.location.href = "A.html";
+            } else if (code === "58"){
+                window.location.href = "B.html";
+            } else if (code === "09"){
+                window.location.href = "C.html";
+            } else if (code === "42"){
+                window.location.href = "D.html";
+            } else if(code === "86") {
+                window.location.href = "E.html";
+            } else if (code === "   " || code === ""){
+                alert("There is no code. Please enter a code.");
+            } else {
+                alert("Incorrect code. Please check again the number you entered.");
+                document.getElementById("code").value = "";
+            }
+        }); 
+        </script>
+<p><br><br><br><br><br></p>
+<header class = "cre">
+    <p>This page was created by Win M.3/2 to explain each card's picture about its meaning.</p>
+</header>
+<h3 class = "not">Notification</h3>
+<h4 class = "nott">    25 Mar 2026</h4>
+<p>         "This website contains information about various memory cards and their meanings. Please fill this form to present oneself</p>
+<a href="https://forms.gle/jKpaJJ8CbhaaNzLCA">Click</a>
+</html>
